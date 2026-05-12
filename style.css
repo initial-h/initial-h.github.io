@@ -421,6 +421,29 @@ body.dark #navbar {
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
 }
 
+.lazy-img {
+    background: linear-gradient(90deg, var(--color-section-bg) 25%, var(--color-border) 50%, var(--color-section-bg) 75%);
+    background-size: 200% 100%;
+    animation: shimmer 1.5s infinite;
+    min-height: 100px;
+}
+
+.lazy-img[src] {
+    animation: none;
+    background: none;
+}
+
+@keyframes shimmer {
+    0% { background-position: 200% 0; }
+    100% { background-position: -200% 0; }
+}
+
+.lazy-video {
+    background: var(--color-section-bg);
+    min-height: 200px;
+    display: block;
+}
+
 .pub-info {
     flex: 1;
 }
