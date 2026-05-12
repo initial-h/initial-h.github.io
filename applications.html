@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hongming Zhang - Applications</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" media="print" onload="this.media='all'">
+    <noscript><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"></noscript>
+</head>
+<body>
+
+<nav id="navbar">
+    <div class="nav-container">
+        <a href="index.html" class="nav-name">Hongming Zhang</a>
+        <div class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="applications.html" class="active">Applications</a>
+            <a href="publications.html">Publications</a>
+            <a href="services.html">Services</a>
+            <a href="misc.html">Misc</a>
+            <button class="theme-toggle" aria-label="Toggle dark mode">
+                <i class="fas fa-moon"></i>
+            </button>
+        </div>
+        <button class="nav-toggle" aria-label="Toggle navigation">
+            <span></span><span></span><span></span>
+        </button>
+    </div>
+</nav>
+
+<header id="header">
+    <div class="container">
+        <h2 class="section-title">Applications</h2>
+    </div>
+</header>
+
+<section id="applications">
+    <div class="container">
+        <div id="projects-content" class="project-grid"></div>
+    </div>
+</section>
+
+<section id="fpdou-detail" style="display:none;">
+    <div class="container">
+        <button class="fpdou-back-btn" onclick="closeFpdouDetail()">
+            <i class="fas fa-arrow-left"></i> Back to Applications
+        </button>
+        <div class="fpdou-detail-content">
+            <div class="fpdou-detail-header">
+                <h1>FPDou: Mastering DouDizhu with Fictitious Play</h1>
+                <p>Combined Fictitious Play with deep reinforcement learning to master DouDizhu, a three-player card game where two farmers cooperate against the landlord.</p>
+            </div>
+
+            <div class="fpdou-detail-media">
+                <img src="images/fpdou.gif" alt="FPDou Demo">
+            </div>
+
+            <div class="fpdou-detail-section">
+                <h2>Overview</h2>
+                <p>DouDizhu is one of the most popular card games in China, with an estimated 600 million players worldwide. It is a three-player game where two farmers cooperate against the landlord. By treating the two farmers as a single player, the game can be modeled as a two-player zero-sum setting, enabling the application of game-theoretic algorithms like Fictitious Play.</p>
+                <img src="images/fpdou_pic/overview.jpg" alt="FPDou Overview" class="fpdou-single-img">
+            </div>
+
+            <div class="fpdou-detail-section">
+                <h2>Results</h2>
+                <p>FPDou achieved state-of-the-art performance on DouDizhu, outperforming both open-source and closed-source models. It ranked first among 452 bots on the Botzone platform.</p>
+                <div class="fpdou-results">
+                    <figure class="fpdou-result-item">
+                        <img src="images/fpdou_pic/results.jpg" alt="FPDou Results">
+                        <figcaption>Performance comparison against baseline models</figcaption>
+                    </figure>
+                    <figure class="fpdou-result-item">
+                        <img src="images/fpdou_pic/botzone_mask.png" alt="Botzone Ranking">
+                        <figcaption>Botzone platform ranking (first among 452 bots)</figcaption>
+                    </figure>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<footer>
+    <div class="container">
+        <p>&copy; 2026 Hongming Zhang.</p>
+    </div>
+</footer>
+
+<div id="imageModal" class="modal">
+    <span class="modal-close" onclick="closeModal()">&times;</span>
+    <img class="modal-content" id="modalImage">
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,78 @@
+[
+  {
+    "title": "FPDou: Mastering DouDizhu with Fictitious Play",
+    "description": "Combined Fictitious Play with deep reinforcement learning to master DouDizhu, a three-player card game where two farmers cooperate against the landlord. By treating the two farmers as a single player, the game becomes a two-player zero-sum setting. Achieved SOTA performance on DouDizhu compared with both open-source and closed-source models. Ranked first among 452 bots on Botzone platform.",
+    "image": "images/fpdou.gif",
+    "tags": ["Game Theory", "Fictitious Play", "Multi-Agent RL"],
+    "links": [
+      {"url": "#fpdou", "icon": "fas fa-expand", "label": "View Details"}
+    ]
+  },
+  {
+    "title": "AlphaZero Gomoku MPI",
+    "description": "Implemented an asynchronous self-play training pipeline for Gomoku based on AlphaGo Zero with parallel MPI training. Designed a transfer learning method to accelerate training on larger boards. Ranked around 20th in Gomocup 2018 preliminary tests.",
+    "image": "images/AlphaZero_gomoku_demo.gif",
+    "tags": ["AlphaZero", "MCTS", "Self-Play", "MPI"],
+    "links": [
+      {"url": "https://github.com/initial-h/AlphaZero_Gomoku_MPI", "icon": "fab fa-github", "label": "GitHub"},
+      {"url": "https://github.com/initial-h/AlphaZero_Gomoku_MPI/stargazers", "icon": "fas fa-star", "label": "Stars", "githubRepo": "initial-h/AlphaZero_Gomoku_MPI"},
+      {"url": "https://github.com/initial-h/AlphaZero_Gomoku_MPI/network/members", "icon": "", "label": "", "badge": "https://img.shields.io/github/forks/initial-h/AlphaZero_Gomoku_MPI?style=flat-square"}
+    ]
+  },
+  {
+    "title": "Tensorlayer 2.0 & RLzoo",
+    "description": "Contributed to the DRL tutorial with Tensorlayer 2.0 covering PG, DDPG, TRPO, PPO, etc. Developed RLzoo, a collection of practical RL algorithms based on TensorFlow 2.0. Supports Atari, MuJoCo, Box2D, Classic Control, and more.",
+    "image": "images/RLzoo/mujoco.gif",
+    "images": [
+      "images/RLzoo/atari.gif",
+      "images/RLzoo/box2d.gif",
+      "images/RLzoo/classic.gif",
+      "images/RLzoo/dmcontrol.gif",
+      "images/RLzoo/mujoco.gif",
+      "images/RLzoo/rlbench.gif",
+      "images/RLzoo/robotics.gif",
+      "images/RLzoo/tl_transparent_logo.png"
+    ],
+    "tags": ["TensorFlow", "RL Framework", "Open Source", "MuJoCo", "Atari"],
+    "links": [
+      {"url": "https://github.com/tensorlayer/TensorLayer", "icon": "fab fa-github", "label": "TensorLayer"},
+      {"url": "https://github.com/tensorlayer", "icon": "fas fa-star", "label": "Stars", "githubRepo": "tensorlayer/TensorLayer"},
+      {"url": "https://github.com/tensorlayer/TensorLayer/network/members", "icon": "", "label": "", "badge": "https://img.shields.io/github/forks/tensorlayer/TensorLayer?style=flat-square"},
+      {"break": true},
+      {"url": "https://github.com/tensorlayer/RLzoo", "icon": "fab fa-github", "label": "RLzoo"},
+      {"url": "https://github.com/tensorlayer/RLzoo/stargazers", "icon": "fas fa-star", "label": "Stars", "githubRepo": "tensorlayer/RLzoo"},
+      {"url": "https://github.com/tensorlayer/RLzoo/network/members", "icon": "", "label": "", "badge": "https://img.shields.io/github/forks/tensorlayer/RLzoo?style=flat-square"}
+    ]
+  },
+  {
+    "title": "FlappyBird DQN with Target Network",
+    "description": "Implemented DQN with freezing target network in TensorFlow on pygame FlappyBird. Added human play mode and rewrote the network using tflearn. Demonstrates the difference between with/without target network in training stability.",
+    "image": "images/flappybird_demo.gif",
+    "tags": ["DQN", "Target Network", "FlappyBird"],
+    "links": [
+      {"url": "https://github.com/initial-h/FlappyBird_DQN_with_target_network", "icon": "fab fa-github", "label": "GitHub"},
+      {"url": "https://github.com/initial-h/FlappyBird_DQN_with_target_network/stargazers", "icon": "fas fa-star", "label": "Stars", "githubRepo": "initial-h/FlappyBird_DQN_with_target_network"},
+      {"url": "https://github.com/initial-h/FlappyBird_DQN_with_target_network/network/members", "icon": "", "label": "", "badge": "https://img.shields.io/github/forks/initial-h/FlappyBird_DQN_with_target_network?style=flat-square"}
+    ]
+  },
+  {
+    "title": "Space Shooter DQN",
+    "description": "Implemented DQN with target network for a space shooter game. Trained the agent to dodge enemies and shoot targets using pixel input. Demonstrates DQN's ability to learn complex game strategies from raw visual input.",
+    "image": "images/spaceshooter_demo.gif",
+    "tags": ["DQN", "Target Network", "Space Shooter"],
+    "links": [
+      {"url": "https://github.com/initial-h/spaceShooter_DQN", "icon": "fab fa-github", "label": "GitHub"},
+      {"url": "https://github.com/initial-h/spaceShooter_DQN/stargazers", "icon": "fas fa-star", "label": "Stars", "githubRepo": "initial-h/spaceShooter_DQN"},
+      {"url": "https://github.com/initial-h/spaceShooter_DQN/network/members", "icon": "", "label": "", "badge": "https://img.shields.io/github/forks/initial-h/spaceShooter_DQN?style=flat-square"}
+    ]
+  },
+  {
+    "title": "Automatic Colorization",
+    "description": "Applied transfer learning with VGG-16 to extract features from grayscale images, built a CNN to predict color channels UV and transformed them into RGB. Trained on only 64 color images from the Tom and Jerry cartoon, yet successfully restored full color to the entire episode.",
+    "image": "images/pre.mp4",
+    "tags": ["CNN", "Transfer Learning", "Computer Vision"],
+    "links": [
+      {"url": "slides.html", "icon": "fas fa-file-powerpoint", "label": "Slides"}
+    ]
+  }
+]

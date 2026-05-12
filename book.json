@@ -1,0 +1,12 @@
+[
+  {
+    "title": "Deep Reinforcement Learning: Fundamentals, Research and Applications",
+    "authors": "Hao Dong, Zihan Ding, Shanghang Zhang, eds. Hang Yuan, <strong>Hongming Zhang</strong>, Jinqing Zhang, Yanhua Huang, Tianyang Yu, Huaqing Zhang, Ruitong Huang",
+    "venue": "Springer Nature, 2020 (Electronic Edition <span style='color:#c0392b;'>300,000+</span> downloads)",
+    "note": "<span style='color:#c0392b;'>Selected to Annual High-Impact Publications in Computer Science by Chinese researchers</span>",
+    "image": "images/pub_book.jpg",
+    "links": [
+      { "label": "Website", "icon": "fas fa-globe", "url": "https://deepreinforcementlearningbook.org/" }
+    ]
+  }
+]

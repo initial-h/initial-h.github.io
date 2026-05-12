@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FPDou - Project Details</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        .project-detail {
+            max-width: 900px;
+            margin: 80px auto 40px;
+            padding: 20px;
+        }
+        .project-detail-header {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+        .project-detail-header h1 {
+            font-size: 2rem;
+            margin-bottom: 10px;
+        }
+        .project-detail-header p {
+            color: var(--color-text-secondary);
+            font-size: 1.1rem;
+            max-width: 700px;
+            margin: 0 auto;
+        }
+        .project-detail-media {
+            margin-bottom: 30px;
+            text-align: center;
+        }
+        .project-detail-media img,
+        .project-detail-media video {
+            max-width: 100%;
+            border-radius: 12px;
+            box-shadow: 0 4px 24px var(--color-shadow);
+        }
+        .project-detail-section {
+            margin-bottom: 40px;
+        }
+        .project-detail-section h2 {
+            font-size: 1.4rem;
+            margin-bottom: 16px;
+            color: var(--color-accent);
+        }
+        .project-detail-section p {
+            line-height: 1.8;
+            color: var(--color-text);
+        }
+        .result-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 20px;
+            margin-top: 20px;
+        }
+        .result-item {
+            text-align: center;
+        }
+        .result-item img {
+            max-width: 100%;
+            border-radius: 8px;
+            box-shadow: 0 2px 12px var(--color-shadow);
+        }
+        .result-item figcaption {
+            margin-top: 8px;
+            font-size: 0.9rem;
+            color: var(--color-text-secondary);
+        }
+        .back-link {
+            display: inline-block;
+            margin-top: 20px;
+            color: var(--color-accent);
+            text-decoration: none;
+        }
+        .back-link:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="nav-logo">Hongming Zhang</a>
+            <div class="nav-toggle">
+                <i class="fas fa-bars"></i>
+            </div>
+            <div class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="applications.html">Applications</a>
+                <a href="publications.html">Publications</a>
+                <a href="services.html">Services</a>
+                <a href="misc.html">Misc</a>
+                <button class="theme-toggle"><i class="fas fa-moon"></i></button>
+            </div>
+        </div>
+    </nav>
+
+    <div class="project-detail">
+        <div class="project-detail-header">
+            <h1>FPDou: Mastering DouDizhu with Fictitious Play</h1>
+            <p>Combined Fictitious Play with deep reinforcement learning to master DouDizhu, a three-player card game where two farmers cooperate against the landlord.</p>
+        </div>
+
+        <div class="project-detail-media">
+            <img src="images/fpdou.gif" alt="FPDou Demo">
+        </div>
+
+        <div class="project-detail-section">
+            <h2>Overview</h2>
+            <p>DouDizhu is one of the most popular card games in China, with an estimated 600 million players worldwide. It is a three-player game where two farmers cooperate against the landlord. By treating the two farmers as a single player, the game can be modeled as a two-player zero-sum setting, enabling the application of game-theoretic algorithms like Fictitious Play.</p>
+            <img src="images/fpdou_pic/overview.jpg" alt="FPDou Overview" style="max-width: 100%; border-radius: 8px; margin-top: 16px; box-shadow: 0 2px 12px var(--color-shadow);">
+        </div>
+
+        <div class="project-detail-section">
+            <h2>Results</h2>
+            <p>FPDou achieved state-of-the-art performance on DouDizhu, outperforming both open-source and closed-source models. It ranked first among 452 bots on the Botzone platform.</p>
+            <div class="result-grid">
+                <figure class="result-item">
+                    <img src="images/fpdou_pic/results.jpg" alt="FPDou Results">
+                    <figcaption>Performance comparison against baseline models</figcaption>
+                </figure>
+                <figure class="result-item">
+                    <img src="images/fpdou_pic/botzone_mask.png" alt="Botzone Ranking">
+                    <figcaption>Botzone platform ranking (first among 452 bots)</figcaption>
+                </figure>
+            </div>
+        </div>
+
+        <a href="applications.html" class="back-link">
+            <i class="fas fa-arrow-left"></i> Back to Applications
+        </a>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

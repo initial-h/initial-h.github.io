@@ -1,0 +1,30 @@
+[
+  {
+    "title": "Iterative Update and Unified Representation for Multi-Agent Reinforcement Learning",
+    "authors": "Jiancheng Long, <strong>Hongming Zhang</strong>, Tianyang Yu, and Bo Xu",
+    "venue": "arXiv preprint arXiv:1908.06758, 2019",
+    "note": "",
+    "image": "images/IUUR/overview.png",
+    "links": [
+      {
+        "url": "https://arxiv.org/abs/1908.06758",
+        "icon": "fas fa-external-link-alt",
+        "label": "arXiv"
+      }
+    ]
+  },
+  {
+    "title": "A Logarithmic Barrier Method For Proximal Policy Optimization",
+    "authors": "Cheng Zeng and <strong>Hongming Zhang</strong>",
+    "venue": "arXiv preprint arXiv:1812.06502, 2018",
+    "note": "",
+    "image": "images/PPO-B/overview.png",
+    "links": [
+      {
+        "url": "https://arxiv.org/abs/1812.06502",
+        "icon": "fas fa-external-link-alt",
+        "label": "arXiv"
+      }
+    ]
+  }
+]
