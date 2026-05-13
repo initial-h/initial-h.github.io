@@ -1,6 +1,6 @@
 # Hongming Zhang - Personal Website
 
-Personal academic website for Hongming Zhang (张宏明), Assistant Professor at the Institute of Automation, Chinese Academy of Sciences.
+Personal academic website for Hongming Zhang, Assistant Professor at the Institute of Automation, Chinese Academy of Sciences.
 
 ## 🌐 Live Demo
 
