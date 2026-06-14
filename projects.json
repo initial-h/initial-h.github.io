@@ -1,7 +1,7 @@
 [
   {
     "title": "FPDou: Mastering DouDizhu with Fictitious Play",
-    "description": "Combined Fictitious Play with deep reinforcement learning to master DouDizhu, a three-player card game where two farmers cooperate against the landlord. By treating the two farmers as a single player, the game becomes a two-player zero-sum setting. Achieved SOTA performance on DouDizhu compared with both open-source and closed-source models. Ranked first among 452 bots on Botzone platform.",
+    "description": "Combined Fictitious Play with deep reinforcement learning to master DouDizhu, a three-player card game where two farmers cooperate against the landlord. By treating the two farmers as a single player, the game becomes a two-player zero-sum setting. Achieved SOTA performance on DouDizhu compared with both open-source and closed-source models. <strong>Ranked first among 452 bots</strong> on Botzone platform.",
     "image": "images/fpdou.gif",
     "tags": ["Game Theory", "Fictitious Play", "Multi-Agent RL"],
     "links": [
@@ -10,7 +10,7 @@
   },
   {
     "title": "AlphaZero Gomoku MPI",
-    "description": "Implemented an asynchronous self-play training pipeline for Gomoku based on AlphaGo Zero with parallel MPI training. Designed a transfer learning method to accelerate training on larger boards. Ranked around 20th in Gomocup 2018 preliminary tests.",
+    "description": "Implemented an asynchronous self-play training pipeline for Gomoku based on AlphaGo Zero with parallel MPI training. Designed a transfer learning method to accelerate training on larger boards. Ranked around <strong>20th in Gomocup 2018</strong> preliminary tests.",
     "image": "images/AlphaZero_gomoku_demo.gif",
     "tags": ["AlphaZero", "MCTS", "Self-Play", "MPI"],
     "links": [

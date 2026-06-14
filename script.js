@@ -202,8 +202,8 @@
         lazyLoadMedia(container);
     }
 
-    function renderProjects(data) {
-        var container = document.getElementById('projects-content');
+    function renderProjects(data, containerId) {
+        var container = document.getElementById(containerId || 'projects-content');
         if (!container || !data) return;
         var html = '';
         data.forEach(function (proj) {
@@ -252,7 +252,7 @@
                 '</div>' +
                 '<div class="project-body">' +
                 '<h3>' + escapeAttr(proj.title) + '</h3>' +
-                '<p>' + escapeAttr(proj.description) + '</p>' +
+                '<p>' + proj.description + '</p>' +
                 tagsHtml +
                 linksHtml +
                 '</div>' +
@@ -345,8 +345,22 @@
     var currentPage = window.location.pathname.split('/').pop() || 'index.html';
 
     if (currentPage === 'index.html' || currentPage === '') {
-        totalLoads = 0;
-        onLoadComplete();
+        totalLoads = 3;
+
+        loadJSON('book.json', function (data) {
+            renderPublications(data, 'book-content');
+            onLoadComplete();
+        });
+
+        loadJSON('selected-applications.json', function (data) {
+            renderProjects(data, 'selected-apps-content');
+            onLoadComplete();
+        });
+
+        loadJSON('selected-publications.json', function (data) {
+            renderPublications(data, 'selected-pubs-content');
+            onLoadComplete();
+        });
     }
 
     if (currentPage === 'publications.html') {

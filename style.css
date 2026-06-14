@@ -331,6 +331,12 @@ body.dark #navbar {
     font-weight: 700;
 }
 
+/* ===== Selected Publications ===== */
+#selected-pubs {
+    padding: 60px 0;
+    background: var(--color-section-bg);
+}
+
 /* ===== Book ===== */
 #book {
     padding: 60px 0;

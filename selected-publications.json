@@ -1,0 +1,72 @@
+[
+  {
+    "title": "Principled Fast and Meta Knowledge Learners for Continual Reinforcement Learning",
+    "authors": "Ke Sun*, <strong>Hongming Zhang*</strong>, Jun Jin, Chao Gao, Xi Chen, Wulong Liu, Linglong Kong",
+    "venue": "ICLR 2026",
+    "year": 2026,
+    "note": "",
+    "image": "images/FAME/overview.png",
+    "images": [],
+    "links": [{"url": "https://openreview.net/forum?id=loNTDX3wTn", "icon": "fas fa-external-link-alt", "label": "Paper"}]
+  },
+  {
+    "title": "Coarse-to-Fine Grounded Memory for LLM Agent Planning",
+    "authors": "Wei Yang, Jinwei Xiao, <strong>Hongming Zhang†</strong>, Qingyang Zhang, Yanna Wang, Bo Xu†",
+    "venue": "EMNLP 2025",
+    "year": 2025,
+    "note": "",
+    "image": "images/CFGM/overview.png",
+    "images": [],
+    "links": [{"url": "https://aclanthology.org/2025.emnlp-main.659/", "icon": "fas fa-external-link-alt", "label": "Paper"}]
+  },
+  {
+    "title": "β-DQN: Improving Deep Q-Learning By Evolving the Behavior",
+    "authors": "<strong>Hongming Zhang</strong>, Fengshuo Bai, Chenjun Xiao, Chao Gao, Bo Xu and Martin Müller",
+    "venue": "AAMAS 2025",
+    "year": 2025,
+    "note": "Oral Presentation",
+    "image": "images/β-DQN/overview.png",
+    "images": ["images/β-DQN/overview.png", "images/β-DQN/poster.jpg"],
+    "links": [{"url": "https://dl.acm.org/doi/10.5555/3709347.3743872", "icon": "fas fa-external-link-alt", "label": "Paper"}]
+  },
+  {
+    "title": "Exploiting the Replay Memory Before Exploring the Environment: Enhancing Reinforcement Learning Through Empirical MDP Iteration",
+    "authors": "<strong>Hongming Zhang</strong>, Chenjun Xiao, Chao Gao, Han Wang, Bo Xu, and Martin Müller",
+    "venue": "NeurIPS 2024",
+    "year": 2024,
+    "note": "",
+    "image": "images/EMIT/overview.png",
+    "images": ["images/EMIT/overview.png", "images/EMIT/poster.jpg"],
+    "links": [{"url": "https://openreview.net/forum?id=lsd27JUJ8v", "icon": "fas fa-external-link-alt", "label": "Paper"}]
+  },
+  {
+    "title": "A Distance-based Anomaly Detection Framework for Deep Reinforcement Learning",
+    "authors": "<strong>Hongming Zhang*</strong>, Ke Sun*, Bo Xu, Linglong Kong, and Martin Müller",
+    "venue": "TMLR 2024",
+    "year": 2024,
+    "note": "",
+    "image": "images/MDX/overview.png",
+    "images": [],
+    "links": [{"url": "https://openreview.net/forum?id=TNKhDBV6PA", "icon": "fas fa-external-link-alt", "label": "Paper"}]
+  },
+  {
+    "title": "Provable Representation with Efficient Planning for Partially Observable Reinforcement Learning",
+    "authors": "<strong>Hongming Zhang*</strong>, Tongzheng Ren*, Chenjun Xiao, Dale Schuurmans, and Bo Dai",
+    "venue": "ICML 2024",
+    "year": 2024,
+    "note": "",
+    "image": "images/µLV-Rep/overview.png",
+    "images": ["images/µLV-Rep/overview.png", "images/µLV-Rep/door-open-v2-compressed.gif", "images/µLV-Rep/drawer-open-v2-compressed.gif", "images/µLV-Rep/window-open-v2-compressed.gif", "images/µLV-Rep/button-press-topdown-v2-compressed.gif", "images/µLV-Rep/metaworld_button_press.gif", "images/µLV-Rep/metaworld_coffee_pull.gif", "images/µLV-Rep/metaworld_door_close.gif", "images/µLV-Rep/metaworld_door_open.gif", "images/µLV-Rep/metaworld_handle_press.gif", "images/µLV-Rep/metaworld_peg_insert_side.gif", "images/µLV-Rep/metaworld_plate_slide.gif", "images/µLV-Rep/metaworld_push.gif"],
+    "links": [{"url": "https://proceedings.mlr.press/v235/zhang24bd.html", "icon": "fas fa-external-link-alt", "label": "Paper"}]
+  },
+  {
+    "title": "Replay Memory as An Empirical MDP: Combining Conservative Estimation with Experience Replay",
+    "authors": "<strong>Hongming Zhang</strong>, Chenjun Xiao, Han Wang, Jun Jin, Bo Xu, and Martin Müller",
+    "venue": "ICLR 2023",
+    "year": 2023,
+    "note": "",
+    "image": "images/CEER/overview.png",
+    "images": [],
+    "links": [{"url": "https://openreview.net/forum?id=SjzFVSJUt8S", "icon": "fas fa-external-link-alt", "label": "Paper"}]
+  }
+]
