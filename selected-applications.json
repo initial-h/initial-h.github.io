@@ -10,7 +10,7 @@
   },
   {
     "title": "AlphaZero Gomoku MPI",
-    "description": "Implemented an asynchronous self-play training pipeline for Gomoku based on AlphaGo Zero with parallel MPI training. Designed a transfer learning method to accelerate training on larger boards. Ranked around <strong>20th in Gomocup 2018</strong> preliminary tests.",
+    "description": "Implemented an asynchronous self-play training pipeline for Gomoku based on AlphaGo Zero with parallel MPI training. Designed a transfer learning method to accelerate training on larger boards. <strong>Ranked around 20th in Gomocup 2018 preliminary tests (one 1080Ti GPU, 400 simulations)</strong>.",
     "image": "images/AlphaZero_gomoku_demo.gif",
     "tags": ["AlphaZero", "MCTS", "Self-Play", "MPI"],
     "links": [
