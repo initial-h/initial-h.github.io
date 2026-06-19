@@ -237,7 +237,8 @@ body.dark #navbar {
 
 .header-links {
     display: flex;
-    gap: 16px;
+    flex-wrap: wrap;
+    align-items: center;
 }
 
 .header-links a {
@@ -248,11 +249,23 @@ body.dark #navbar {
     height: 36px;
     border-radius: 18px;
     padding: 0 14px;
-    gap: 6px;
+    margin-right: 8px;
+    margin-bottom: 8px;
     background: var(--color-section-bg);
     color: var(--color-text-light);
     font-size: 0.9rem;
     transition: all 0.2s;
+    white-space: nowrap;
+}
+
+.header-links a > i + span,
+.header-links a > i:not(:last-child) {
+    margin-right: 6px;
+}
+
+.header-links-divider {
+    margin-right: 8px;
+    margin-bottom: 8px;
 }
 
 .header-links a[href$=".pdf"], .header-links a[href*="scholar.google"] {
@@ -270,7 +283,7 @@ body.dark #navbar {
     height: 24px;
     background: var(--color-border);
     align-self: center;
-    margin: 0 4px;
+    margin: 0 4px 8px 4px;
 }
 
 /* ===== Section Titles ===== */
