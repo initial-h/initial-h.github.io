@@ -1,6 +1,6 @@
 [
     {
-        "category": "Presentations",
+        "category": "Slides",
         "icon": "fas fa-chalkboard-user",
         "items": [
             { "label": "Policy Optimization in RLHF: From PPO to Recent Advances", "file": "slides/Policy Optimization in RLHF From PPO to Recent Advances.pdf", "date": "2025.11.19" },
