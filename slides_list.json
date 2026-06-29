@@ -1,0 +1,34 @@
+[
+    {
+        "category": "Presentations",
+        "icon": "fas fa-chalkboard-user",
+        "items": [
+            { "label": "Policy Optimization in RLHF: From PPO to Recent Advances", "file": "slides/Policy Optimization in RLHF From PPO to Recent Advances.pdf", "date": "2025.11.19" },
+            { "label": "Deep Research Agents: Overview and Implementations", "file": "slides/DeepResearch_v3.pdf", "date": "2025.07.23" },
+            { "label": "Inference Acceleration in Large Language Models", "file": "slides/Inference Acceleration in LLM.pdf", "date": "2025.04.23" },
+            { "label": "Techniques Behind OpenAI o1: Guesses and Thoughts", "file": "slides/guessofo1.pdf", "date": "2024.12.18" },
+            { "label": "Rethinking Kullback-Leibler Divergence in Knowledge Distillation for Large Language Models", "file": "slides/Rethinking Kullback-Leibler Divergence.pdf", "date": "2024.09.17" },
+            { "label": "Survey on Large Language Model-Enhanced Reinforcement Learning: Concept, Taxonomy, and Methods", "file": "slides/Survey on Large Language Model-Enhanced Reinforcement Learning.pdf", "date": "2024.05.22" },
+            { "label": "A Series of Continuous Control Algorithms", "file": "slides/A Series of Continuous Control Algorithms.pdf", "date": "2024.02.28" },
+            { "label": "A Survey on Transformers in Reinforcement Learning", "file": "slides/A Survey on Transformers in Reinforcement Learning.pdf", "date": "2023.10.25" },
+            { "label": "β-DQN: Diverse Exploration via Learning a Behavior Function", "file": "slides/Diverse Exploration via Learning a Behavior Function.pdf", "date": "2023.10.06" },
+            { "label": "Masked Trajectory Models for Prediction, Representation, and Control", "file": "slides/Masked Trajectory Models for Prediction, Representation, and Control.pdf", "date": "2023.07.18" },
+            { "label": "Improving Deep Reinforcement Learning with Empirical Bellman Consistency", "file": "slides/Improving_Deep_Reinforcement_Learning_with_Empirical_Bellman_Consistency.pdf", "date": "2023.05.31" },
+            { "label": "Offline Reinforcement Learning with Implicit Q-Learning", "file": "slides/OFFLINE REINFORCEMENT LEARNING WITH IMPLICIT Q-LEARNING.pdf", "date": "2023.03.29" },
+            { "label": "On the Role of Planning in Model-Based Deep Reinforcement Learning", "file": "slides/ON THE ROLE OF PLANNING IN MODEL-BASED DEEP REINFORCEMENT LEARNING.pdf", "date": "2022.12.09" },
+            { "label": "A Summary of Offline Reinforcement Learning Methods", "file": "slides/Offline Reinforcement Learning.pdf", "date": "2022.10.14" },
+            { "label": "Replay Memory as an Empirical MDP: Combining Conservative Estimation with Experience Replay", "file": "slides/REPLAY MEMORY AS AN EMPIRICAL MDP.pdf", "date": "2022.10.05" },
+            { "label": "Off-Dynamics Reinforcement Learning Training for Transfer with Domain Classifiers", "file": "slides/OFF-DYNAMICS REINFORCEMENT LEARNING TRAINING FOR TRANSFER WITH DOMAIN CLASSIFIERS.pdf", "date": "2022.08.05" },
+            { "label": "Planning to Explore via Self-Supervised World Models", "file": "slides/Planning to Explore via Self-Supervised World Models.pdf", "date": "2022.06.10" },
+            { "label": "The Difficulty of Passive Learning in Deep Reinforcement Learning", "file": "slides/The Difficulty of Passive Learning in Deep Reinforcement Learning.pdf", "date": "2022.04.01" },
+            { "label": "Combining Q-Learning and Search with Amortized Value Estimates", "file": "slides/Combining Q-Learning and Search with Amortized Value Estimates.pdf", "date": "2022.01.26" },
+            { "label": "Learning Search Space Partition for Black-box Optimization using Monte Carlo Tree Search", "file": "slides/Learning Search Space Partition for Black-box Optimization using Monte Carlo Tree Search.pdf", "date": "2021.10.06" },
+            { "label": "Vector Quantized Models for Planning", "file": "slides/Vector Quantized Models for Planning.pdf", "date": "2021.07.14" },
+            { "label": "Sample-Optimal Parametric Q-Learning Using Linearly Additive Features", "file": "slides/Sample-Optimal Parametric Q-Learning Using Linearly Additive Features.pdf", "date": "2021.04.07" },
+            { "label": "Population Based Training of Neural Networks & Bayesian Optimization: Introduction", "file": "slides/PBT&Bayesian.pdf", "date": "2019.04.12" },
+            { "label": "AlphaZero in Gomoku", "file": "slides/alphazero_in_gomoku_slides.pdf", "date": "2018.11.30" },
+            { "label": "Playing Hard Exploration Games by Watching YouTube", "file": "slides/Playing hard exploration games by watching YouTube.pdf" },
+            { "label": "Grandmaster Level in StarCraft II Using Multi-Agent Reinforcement Learning", "file": "slides/alphastar_v4.pdf" }
+        ]
+    }
+]

@@ -320,7 +320,17 @@
             if (cat.items && cat.items.length > 0) {
                 itemsHtml = '<ul>';
                 cat.items.forEach(function (item) {
-                    itemsHtml += '<li>' + item + '</li>';
+                    if (typeof item === 'string') {
+                        itemsHtml += '<li>' + item + '</li>';
+                    } else {
+                        var href = item.url;
+                        if (!href && item.file) {
+                            href = 'slide_viewer.html?file=' + encodeURIComponent(item.file) + '&title=' + encodeURIComponent(item.label);
+                        }
+                        var dateHtml = item.date ? '<span class="misc-item-date">' + escapeAttr(item.date) + '</span> ' : '';
+                        var linkHtml = href ? '<a href="' + escapeAttr(href) + '" class="misc-item-link">' + escapeAttr(item.label) + '</a>' : escapeAttr(item.label);
+                        itemsHtml += '<li>' + dateHtml + linkHtml + '</li>';
+                    }
                 });
                 itemsHtml += '</ul>';
             }
@@ -426,10 +436,15 @@
     }
 
     if (currentPage === 'misc.html') {
-        totalLoads = 1;
+        totalLoads = 2;
 
         loadJSON('misc.json', function (data) {
             renderListSection(data, 'misc-content', 'misc-category');
+            onLoadComplete();
+        });
+
+        loadJSON('slides_list.json', function (data) {
+            renderListSection(data, 'slides-content', 'misc-category');
             onLoadComplete();
         });
     }

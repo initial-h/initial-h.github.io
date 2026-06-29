@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Slides Viewer - Hongming Zhang</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" media="print" onload="this.media='all'">
+    <noscript><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"></noscript>
+    <style>
+        .slides-container {
+            max-width: 1200px;
+            margin: 80px auto 40px;
+            padding: 20px;
+            text-align: center;
+        }
+        .slides-header {
+            margin-bottom: 30px;
+        }
+        .slides-header h1 {
+            font-size: 2rem;
+            margin-bottom: 10px;
+        }
+        .slides-header p {
+            color: var(--color-text-secondary);
+        }
+        .pdf-viewer {
+            background: white;
+            border-radius: 12px;
+            box-shadow: 0 4px 24px rgba(0,0,0,0.1);
+            overflow: hidden;
+            margin-bottom: 30px;
+        }
+        .pdf-viewer iframe {
+            width: 100%;
+            height: 800px;
+            border: none;
+            display: block;
+        }
+        .back-link {
+            display: inline-block;
+            margin-top: 30px;
+            color: var(--color-accent);
+            text-decoration: none;
+            font-size: 1.1rem;
+        }
+        .back-link:hover {
+            text-decoration: underline;
+        }
+        @media (max-width: 768px) {
+            .pdf-viewer iframe {
+                height: 600px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<nav id="navbar">
+    <div class="nav-container">
+        <a href="index.html" class="nav-name">Hongming Zhang</a>
+        <div class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="applications.html">Applications</a>
+            <a href="publications.html">Publications</a>
+            <a href="services.html">Services</a>
+            <a href="misc.html">Misc</a>
+            <button class="theme-toggle" aria-label="Toggle dark mode">
+                <i class="fas fa-moon"></i>
+            </button>
+        </div>
+        <button class="nav-toggle" aria-label="Toggle navigation">
+            <span></span><span></span><span></span>
+        </button>
+    </div>
+</nav>
+
+<div class="slides-container">
+    <div class="slides-header">
+        <h1 id="slide-title">Slides</h1>
+        <p>Group Meeting Presentation</p>
+    </div>
+
+    <div class="pdf-viewer">
+        <iframe id="slide-frame" title="Slides PDF" type="application/pdf">
+            <p>Your browser does not support PDFs.</p>
+        </iframe>
+    </div>
+
+    <a href="misc.html" class="back-link">
+        <i class="fas fa-arrow-left"></i> Back to Misc
+    </a>
+</div>
+
+<footer>
+    <div class="container">
+        <p>&copy; 2026 Hongming Zhang.</p>
+    </div>
+</footer>
+
+<script>
+    (function () {
+        var params = new URLSearchParams(window.location.search);
+        var file = params.get('file');
+        var title = params.get('title');
+        if (title) {
+            document.getElementById('slide-title').textContent = decodeURIComponent(title);
+            document.title = decodeURIComponent(title) + ' - Hongming Zhang';
+        }
+        if (file) {
+            var frame = document.getElementById('slide-frame');
+            frame.src = decodeURIComponent(file);
+        }
+    })();
+</script>
+<script src="script.js"></script>
+</body>
+</html>
