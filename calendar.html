@@ -320,7 +320,10 @@ function getMonday(d) {
     return date;
 }
 
+var calInitialized = false;
 function initCalendar() {
+    if (calInitialized) { render(); return; }
+    calInitialized = true;
     bindControls();
     render();
 }
