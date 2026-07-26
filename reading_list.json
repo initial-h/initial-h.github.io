@@ -1,0 +1,9 @@
+[
+    {
+        "category": "",
+        "icon": "fas fa-bookmark",
+        "items": [
+            { "label": "An Opinionated Guide to ML Research — John Schulman", "url": "http://joschu.net/blog/opinionated-guide-ml-research.html" }
+        ]
+    }
+]

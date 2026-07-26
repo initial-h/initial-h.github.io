@@ -297,6 +297,17 @@ body.dark #navbar {
     margin-bottom: 32px;
 }
 
+.subsection-title {
+    font-family: var(--font-heading);
+    font-size: 1.35rem;
+    font-weight: 600;
+    color: var(--color-text);
+    margin-bottom: 6px;
+    padding-bottom: 8px;
+    border-bottom: 2px solid var(--color-accent);
+    display: inline-block;
+}
+
 /* ===== About ===== */
 #about {
     padding: 60px 0;

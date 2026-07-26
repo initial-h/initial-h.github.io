@@ -1,0 +1,15 @@
+[
+    {
+        "category": "Chinese Blog",
+        "icon": "fas fa-pen-nib",
+        "items": [
+            { "label": ">> My Chinese Blog on cnblogs.com (all posts)", "url": "https://www.cnblogs.com/initial-h" },
+            { "label": "Gumbel-Softmax Trick和Gumbel分布", "url": "https://www.cnblogs.com/initial-h/p/9468974.html" },
+            { "label": "基于胜率矩阵的PageRank排序", "url": "https://www.cnblogs.com/initial-h/p/12862752.html" },
+            { "label": "MDP中值函数的求解", "url": "https://www.cnblogs.com/initial-h/p/9321961.html" },
+            { "label": "《Population Based Training of Neural Networks》论文解读", "url": "https://www.cnblogs.com/initial-h/p/10519150.html" },
+            { "label": "《Multi-Agent Actor-Critic for Mixed Cooperative-Competitive Environments》论文解读", "url": "https://www.cnblogs.com/initial-h/p/9429632.html" },
+            { "label": "《Playing hard exploration games by watching YouTube》论文解读", "url": "https://www.cnblogs.com/initial-h/p/9381226.html" }
+        ]
+    }
+]

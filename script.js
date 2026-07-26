@@ -334,8 +334,9 @@
                 });
                 itemsHtml += '</ul>';
             }
+            var titleHtml = cat.category ? '<h3><i class="' + escapeAttr(cat.icon) + '"></i> ' + escapeAttr(cat.category) + '</h3>' : '';
             html += '<div class="' + cssClass + '">' +
-                '<h3><i class="' + escapeAttr(cat.icon) + '"></i> ' + escapeAttr(cat.category) + '</h3>' +
+                titleHtml +
                 itemsHtml +
                 '</div>';
         });
@@ -436,15 +437,25 @@
     }
 
     if (currentPage === 'misc.html') {
-        totalLoads = 2;
-
-        loadJSON('misc.json', function (data) {
-            renderListSection(data, 'misc-content', 'misc-category');
-            onLoadComplete();
-        });
+        totalLoads = 4;
 
         loadJSON('slides_list.json', function (data) {
             renderListSection(data, 'slides-content', 'misc-category');
+            onLoadComplete();
+        });
+
+        loadJSON('reading_list.json', function (data) {
+            renderListSection(data, 'reading-content', 'misc-category');
+            onLoadComplete();
+        });
+
+        loadJSON('blog_list.json', function (data) {
+            renderListSection(data, 'blog-content', 'misc-category');
+            onLoadComplete();
+        });
+
+        loadJSON('misc.json', function (data) {
+            renderListSection(data, 'misc-content', 'misc-category');
             onLoadComplete();
         });
     }

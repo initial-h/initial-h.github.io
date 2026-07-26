@@ -1,8 +1,10 @@
 [
     {
-        "category": "Slides",
+        "category": "",
         "icon": "fas fa-chalkboard-user",
         "items": [
+            { "label": "理查德·萨顿的智能观", "file": "slides/理查德萨顿的智能观.pdf", "date": "2026.07.08" },
+            { "label": "OpenClaw 介绍", "file": "slides/OpenClaw 介绍.pdf", "date": "2026.03.26" },
             { "label": "Policy Optimization in RLHF: From PPO to Recent Advances", "file": "slides/Policy Optimization in RLHF From PPO to Recent Advances.pdf", "date": "2025.11.19" },
             { "label": "Deep Research Agents: Overview and Implementations", "file": "slides/DeepResearch_v3.pdf", "date": "2025.07.23" },
             { "label": "Inference Acceleration in Large Language Models", "file": "slides/Inference Acceleration in LLM.pdf", "date": "2025.04.23" },
@@ -25,10 +27,11 @@
             { "label": "Learning Search Space Partition for Black-box Optimization using Monte Carlo Tree Search", "file": "slides/Learning Search Space Partition for Black-box Optimization using Monte Carlo Tree Search.pdf", "date": "2021.10.06" },
             { "label": "Vector Quantized Models for Planning", "file": "slides/Vector Quantized Models for Planning.pdf", "date": "2021.07.14" },
             { "label": "Sample-Optimal Parametric Q-Learning Using Linearly Additive Features", "file": "slides/Sample-Optimal Parametric Q-Learning Using Linearly Additive Features.pdf", "date": "2021.04.07" },
+            { "label": "Generalized Advantage Estimation (GAE)", "file": "slides/GAE.pdf", "date": "2021.01.13" },
+            { "label": "Grandmaster Level in StarCraft II Using Multi-Agent Reinforcement Learning", "file": "slides/alphastar_v4.pdf", "date": "2020.05.12" },
             { "label": "Population Based Training of Neural Networks & Bayesian Optimization: Introduction", "file": "slides/PBT&Bayesian.pdf", "date": "2019.04.12" },
             { "label": "AlphaZero in Gomoku", "file": "slides/alphazero_in_gomoku_slides.pdf", "date": "2018.11.30" },
-            { "label": "Playing Hard Exploration Games by Watching YouTube", "file": "slides/Playing hard exploration games by watching YouTube.pdf" },
-            { "label": "Grandmaster Level in StarCraft II Using Multi-Agent Reinforcement Learning", "file": "slides/alphastar_v4.pdf" }
+            { "label": "Playing Hard Exploration Games by Watching YouTube", "file": "slides/Playing hard exploration games by watching YouTube.pdf", "date": "2018.07.28" }
         ]
     }
 ]
