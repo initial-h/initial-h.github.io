@@ -942,6 +942,46 @@ footer p {
     color: var(--color-text-light);
 }
 
+.footer-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 24px;
+    flex-wrap: wrap;
+}
+
+.footer-row p {
+    flex: 1;
+    text-align: right;
+    margin: 0;
+}
+
+.footer-spacer {
+    flex: 1;
+}
+
+.footer-counter {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.footer-counter-label {
+    font-family: var(--font-heading);
+    font-size: 0.8rem;
+    font-weight: 500;
+    color: var(--color-text-light);
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+.footer-counter img {
+    border: 0;
+    height: 26px;
+    width: auto;
+    display: block;
+}
+
 .footer-note {
     font-size: 0.8rem !important;
     margin-top: 4px;
