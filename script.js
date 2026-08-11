@@ -318,21 +318,39 @@
         data.forEach(function (cat) {
             var itemsHtml = '';
             if (cat.items && cat.items.length > 0) {
-                itemsHtml = '<ul>';
-                cat.items.forEach(function (item) {
-                    if (typeof item === 'string') {
-                        itemsHtml += '<li>' + item + '</li>';
-                    } else {
-                        var href = item.url;
-                        if (!href && item.file) {
-                            href = 'slide_viewer.html?file=' + encodeURIComponent(item.file) + '&title=' + encodeURIComponent(item.label);
+                var hasImageItems = cat.items.some(function(item) { return typeof item === 'object' && item.image; });
+                if (hasImageItems) {
+                    itemsHtml = '<div class="misc-image-grid">';
+                    cat.items.forEach(function (item) {
+                        if (typeof item === 'object' && item.image) {
+                            var descHtml = item.description ? '<p class="misc-image-desc">' + escapeAttr(item.description) + '</p>' : '';
+                            itemsHtml += '<div class="misc-image-card">' +
+                                '<img src="' + escapeAttr(item.image) + '" alt="' + escapeAttr(item.label) + '" class="misc-image-qrcode">' +
+                                '<div class="misc-image-info">' +
+                                '<h4>' + escapeAttr(item.label) + '</h4>' +
+                                descHtml +
+                                '</div>' +
+                                '</div>';
                         }
-                        var dateHtml = item.date ? '<span class="misc-item-date">' + escapeAttr(item.date) + '</span> ' : '';
-                        var linkHtml = href ? '<a href="' + escapeAttr(href) + '" class="misc-item-link">' + escapeAttr(item.label) + '</a>' : escapeAttr(item.label);
-                        itemsHtml += '<li>' + dateHtml + linkHtml + '</li>';
-                    }
-                });
-                itemsHtml += '</ul>';
+                    });
+                    itemsHtml += '</div>';
+                } else {
+                    itemsHtml = '<ul>';
+                    cat.items.forEach(function (item) {
+                        if (typeof item === 'string') {
+                            itemsHtml += '<li>' + item + '</li>';
+                        } else {
+                            var href = item.url;
+                            if (!href && item.file) {
+                                href = 'slide_viewer.html?file=' + encodeURIComponent(item.file) + '&title=' + encodeURIComponent(item.label);
+                            }
+                            var dateHtml = item.date ? '<span class="misc-item-date">' + escapeAttr(item.date) + '</span> ' : '';
+                            var linkHtml = href ? '<a href="' + escapeAttr(href) + '" class="misc-item-link">' + escapeAttr(item.label) + '</a>' : escapeAttr(item.label);
+                            itemsHtml += '<li>' + dateHtml + linkHtml + '</li>';
+                        }
+                    });
+                    itemsHtml += '</ul>';
+                }
             }
             var titleHtml = cat.category ? '<h3><i class="' + escapeAttr(cat.icon) + '"></i> ' + escapeAttr(cat.category) + '</h3>' : '';
             html += '<div class="' + cssClass + '">' +

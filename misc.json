@@ -1,4 +1,7 @@
 [
     { "category": "I Play", "icon": "fas fa-running", "items": ["Badminton", "Football", "Hiking"] },
-    { "category": "I Watch", "icon": "fas fa-tv", "items": ["Basketball (NBA)", "Esports (League of Legends, Clash Royale)"] }
+    { "category": "I Watch", "icon": "fas fa-tv", "items": ["Basketball (NBA)", "Esports (League of Legends, Clash Royale)"] },
+    { "category": "My Mini Programs", "icon": "fas fa-qrcode", "items": [
+        { "label": "国学起名小程序", "image": "images/微信小程序/gh_314c11660439_1280.jpg", "description": "融合传统国学与现代命名美学" }
+    ] }
 ]
